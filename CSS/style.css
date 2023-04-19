@@ -94,7 +94,7 @@ body :lang(ko) {
   padding: 10px 20px;
   border: 1px solid var(--color-border);
   border-radius: 10px;
-  background-color: var(--color--white);
+  background-color: var(--color-white);
   position: absolute;
   top: calc(100% + 4px);
   right: -6px;
@@ -112,7 +112,7 @@ body :lang(ko) {
   width: 12px;
   height: 12px;
   border: 1px solid var(--color-border);
-  background-color: var(--color--white);
+  background-color: var(--color-white);
   transform: rotate(45deg);
   transform-origin: 0 0;
   position: absolute;
@@ -384,6 +384,51 @@ body :lang(ko) {
   height: 46px;
   background-image: url("/assets/images/power_create_caption.png");
   transform: translate(543px, 908px);
+}
+
+/* Display */
+.display {
+  margin-top: 450px;
+}
+
+/* Display / Notes */
+.display .notes h1 {
+  width: 630px;
+  height: 370px;
+  background-image: url("/assets/images/display_headline.png");
+  transform: translate(104px, 0);
+}
+
+.display .notes .figures {
+  height: 814px;
+  margin-top: 26px;
+}
+
+.display .notes figcaption {
+  width: 145px;
+  height: 45px;
+  background-image: url("/assets/images/display_notes_caption.png");
+  transform: translate(707px, -16px);
+}
+
+/* Display / Shareplay */
+.display .shareplay {
+  margin-top: 55px;
+}
+
+.display .shareplay .figures {
+  height: 630px;
+}
+
+.display .shareplay figure {
+  transform: translate(-360px, 0);
+}
+
+.display .shareplay figcaption {
+  width: 110px;
+  height: 48px;
+  background-image: url("/assets/images/display_shareplay_caption.png");
+  transform: translate(300px, 658px);
 }
 
 /* components */
