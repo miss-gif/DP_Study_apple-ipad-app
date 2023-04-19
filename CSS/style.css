@@ -520,6 +520,87 @@ body :lang(ko) {
   transform: translate(27px, 905px);
 }
 
+/* Wireless */
+.wireless {
+  margin-top: 202px;
+}
+
+/* Wireless / Facetime */
+.wireless .facetime h1 {
+  width: 730px;
+  height: 330px;
+  background-image: url("/assets/images/wireless_headline.png");
+  transform: translate(104px, 0);
+}
+
+.wireless .facetime .figures {
+  height: 773px;
+}
+
+.wireless .facetime figure {
+  transform: translate(-68px, 0);
+}
+
+.wireless .facetime figcaption {
+  width: 139px;
+  height: 46px;
+  background-image: url("/assets/images/wireless_facetime_caption.png");
+  transform: translate(843px, -49px);
+}
+
+/* Wireless / Files */
+.wireless .files figure {
+  transform: translate(34px, -34px);
+}
+
+.wireless .files figcaption {
+  width: 127px;
+  height: 46px;
+  background-image: url("/assets/images/wireless_files_caption.png");
+  transform: translate(96px, 639px);
+}
+
+/* Acssessories */
+.accessories {
+  margin-top: 195px;
+}
+
+.accessories h1 {
+  width: 550px;
+  height: 343px;
+  background-image: url("/assets/images/accessories_headline.png");
+  margin: 0 auto;
+}
+
+.accessories .figures {
+  height: 1021px;
+  margin-top: 34px;
+}
+
+.accessories figure {
+  transform: translate(-24px, 0);
+}
+
+.accessories figcaption .caption-memo {
+  width: 169px;
+  height: 41px;
+  background-image: url("/assets/images/accessories_caption_memo.png");
+  transform: translate(790px, -52px);
+}
+
+.accessories figcaption .caption-supports {
+  width: 200px;
+  height: 70px;
+  background-image: url("/assets/images/accessories_caption_supports.png");
+  transform: translate(163px, 821px);
+}
+
+.accessories .infos {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 /* components */
 .nav {
   background-color: rgba(255, 255, 255, 0.7);
@@ -585,10 +666,6 @@ body :lang(ko) {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 20px;
-}
-
-body {
-  height: 10000px;
 }
 
 p {
@@ -697,11 +774,21 @@ html.fixed {
   transform: translate(0, 0);
 }
 
+.infos--large .info {
+  max-width: 410px;
+}
+
 .info .icon {
   width: 100px;
   height: 100px;
   margin: 0 0 -15px -30px;
   animation: sprite-icon 3s steps(1) infinite;
+}
+
+.info .link {
+  display: block;
+  margin-top: 44px;
+  font-size: 19.5px;
 }
 
 .info .icon.icon--chip {

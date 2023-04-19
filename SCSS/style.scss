@@ -31,10 +31,6 @@
   padding: 0 20px;
 }
 
-body {
-  height: 10000px;
-}
-
 p {
   line-height: 1.6;
 }
@@ -134,11 +130,20 @@ html.fixed {
   opacity: 1;
   transform: translate(0, 0);
 }
+.infos--large .info {
+  max-width: 410px;
+}
 .info .icon {
   width: 100px;
   height: 100px;
   margin: 0 0 -15px -30px;
   animation: sprite-icon 3s steps(1) infinite;
+}
+
+.info .link {
+  display: block;
+  margin-top: 44px;
+  font-size: 19.5px;
 }
 
 .info .icon.icon--chip {
