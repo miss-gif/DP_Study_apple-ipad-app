@@ -9,5 +9,5 @@ body {
   :lang(ko) {
     word-break: keep-all;
   }
-  color: #1d1d1d;
+  color: var(--color-font);
 }

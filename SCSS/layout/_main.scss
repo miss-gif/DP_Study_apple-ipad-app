@@ -1,0 +1,112 @@
+.hero {
+  background-color: var(--color-section);
+  .inner {
+    padding-bottom: 110px;
+  }
+  h1 {
+    width: 221px;
+    height: 91px;
+    background-image: url("/assets/images/hero_ipad_text.png");
+    position: absolute;
+    transform: translate(624px, 235px);
+    z-index: 1;
+  }
+  &__figures {
+    height: 808px;
+  }
+  &__figure {
+    transform: translate(74px, -64px);
+  }
+  .caption-camera {
+    width: 120px;
+    height: 84px;
+    background-image: url("/assets/images/hero_ipad_caption_camera.png");
+    transform: translate(43px, 580px);
+  }
+  .caption-chip {
+    width: 95px;
+    height: 43px;
+    background-image: url("/assets/images/hero_ipad_caption_chip.png");
+    transform: translate(589px, 510px);
+  }
+  .caption-storage {
+    width: 80px;
+    height: 43px;
+    background-image: url("/assets/images/hero_ipad_caption_storage.png");
+    transform: translate(627px, 631px);
+  }
+  h2 {
+    width: 738px;
+    height: 145px;
+    margin: 0 auto;
+    background-image: url("/assets/images/hero_headline.png");
+  }
+  &__pricing {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__description {
+    width: 88%;
+    margin: 18px auto 0;
+    font-size: 19px;
+    text-align: center;
+  }
+  &__links {
+    margin-top: 30px;
+  }
+}
+
+/* Power */
+.power {
+  margin-top: 110px;
+}
+/* Power / Multiple Apps */
+.power .multiple-apps h1 {
+  width: 500px;
+  height: 280px;
+  background-image: url("/assets/images/power_headline.png");
+  transform: translate(104px, 0);
+}
+.power .multiple-apps .figures {
+  height: 773px;
+}
+.power .multiple-apps figcaption {
+  width: 138px;
+  height: 46px;
+  background-image: url("/assets/images/power_multiple_apps_caption.png");
+  transform: translate(703px, -47px);
+}
+/* Power / Arcade */
+.power .arcade {
+  margin-top: 55px;
+}
+.power .arcade .figures {
+  height: 600px;
+}
+.power .arcade figure {
+  transform: translate(-347px, -90px);
+}
+.power .arcade figcaption {
+  width: 150px;
+  height: 77px;
+  background-image: url("/assets/images/power_arcade_caption.png");
+  transform: translate(483px, 653px);
+}
+/* Power / Create */
+.power .create {
+  margin-top: 55px;
+}
+.power .create .figures {
+  height: 772px;
+}
+.power .create figure {
+  transform: translate(-25px, 50px);
+}
+.power .create figcaption {
+  width: 142px;
+  height: 46px;
+  background-image: url("/assets/images/power_create_caption.png");
+  transform: translate(543px, 908px);
+}

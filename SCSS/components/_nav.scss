@@ -1,14 +1,13 @@
 .nav {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 8;
   .inner {
     max-width: 1000px;
     height: 52px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
   }
@@ -27,7 +26,7 @@
     padding: 6px;
     font-size: 11px;
     &:hover {
-      color: #0071e3;
+      color: var(--color-link);
     }
   }
 }
