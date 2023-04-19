@@ -1,0 +1,47 @@
+/* base */
+@import "base/reset";
+@import "base/typography";
+/* layout */
+@import "layout/header";
+/* components */
+@import "components/nav";
+
+/* common.scss */
+
+.inner {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: orange;
+  height: 10000px;
+}
+
+html.fixed {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  font-size: 11px;
+  line-height: 1;
+  color: #fff;
+  background-color: #0071e3;
+}
+.btn:hover {
+  opacity: 0.7;
+}
+.btn:focus {
+  box-shadow: 0 0 0 4px #81b9f1;
+}

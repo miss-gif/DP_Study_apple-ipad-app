@@ -1,0 +1,13 @@
+/* typography.scss */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  :lang(ko) {
+    word-break: keep-all;
+  }
+  color: #1d1d1d;
+}
