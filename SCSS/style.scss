@@ -4,6 +4,7 @@
 /* layout */
 @import "layout/header";
 @import "layout/main";
+@import "layout/footer";
 /* components */
 @import "components/nav";
 
@@ -62,6 +63,12 @@
 
 p {
   line-height: 1.6;
+}
+
+sup {
+  margin-right: 6px;
+  font-size: 0.7em;
+  vertical-align: top;
 }
 
 html.fixed {
