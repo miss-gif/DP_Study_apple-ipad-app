@@ -1,0 +1,61 @@
+/* Hero */
+
+.hero {
+  background-color: var(--color-section);
+  .inner {
+    padding-bottom: 110px;
+  }
+  h1 {
+    width: 221px;
+    height: 91px;
+    background-image: url("/assets/images/hero_ipad_text.png");
+    position: absolute;
+    transform: translate(624px, 235px);
+    z-index: 1;
+  }
+  &__figures {
+    height: 808px;
+  }
+  &__figure {
+    transform: translate(74px, -64px);
+  }
+  .caption-camera {
+    width: 120px;
+    height: 84px;
+    background-image: url("/assets/images/hero_ipad_caption_camera.png");
+    transform: translate(43px, 580px);
+  }
+  .caption-chip {
+    width: 95px;
+    height: 43px;
+    background-image: url("/assets/images/hero_ipad_caption_chip.png");
+    transform: translate(589px, 510px);
+  }
+  .caption-storage {
+    width: 80px;
+    height: 43px;
+    background-image: url("/assets/images/hero_ipad_caption_storage.png");
+    transform: translate(627px, 631px);
+  }
+  h2 {
+    width: 738px;
+    height: 145px;
+    margin: 0 auto;
+    background-image: url("/assets/images/hero_headline.png");
+  }
+  &__pricing {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__description {
+    width: 88%;
+    margin: 18px auto 0;
+    font-size: 19px;
+    text-align: center;
+  }
+  &__links {
+    margin-top: 30px;
+  }
+}

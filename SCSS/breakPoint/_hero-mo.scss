@@ -1,0 +1,47 @@
+@include tablet {
+  .hero {
+    .inner {
+      padding-bottom: 80px;
+    }
+    h1 {
+      width: 166px;
+      height: 68px;
+      transform: translate(448px, 165px);
+    }
+    &__figures {
+      height: 584px;
+      margin-bottom: 14px;
+    }
+    &__figure {
+      transform: translate(70px, -24px);
+    }
+    img {
+      width: 540px;
+    }
+    .caption-camera {
+      transform: scale(0.8) translate(-9px, 524px);
+    }
+    .caption-chip {
+      transform: scale(0.8) translate(510px, 422px);
+    }
+    .caption-storage {
+      transform: scale(0.8) translate(556px, 556px);
+    }
+    h2 {
+      width: 515px;
+      height: 95px;
+    }
+  }
+}
+
+@include mobile {
+  .hero {
+    &__figures {
+      display: flex;
+      justify-content: center;
+    }
+    &__figure {
+      position: relative;
+    }
+  }
+}

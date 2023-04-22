@@ -43,6 +43,7 @@ html.fixed {
 @include tablet {
   .inner {
     padding: 0 10px;
+    max-width: 692px;
   }
 }
 
@@ -97,7 +98,11 @@ html.fixed {
 }
 
 .bgtext {
+  display: block;
   text-indent: -9999px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .links {
@@ -115,6 +120,17 @@ html.fixed {
   }
   &::after {
     content: " >";
+  }
+}
+
+@include mobile {
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .link {
+    font-size: 17px;
   }
 }
 
@@ -239,6 +255,26 @@ html.fixed {
   font-size: 21.5px;
   font-weight: 600;
   line-height: 1.5;
+}
+
+@include tablet {
+  .info {
+    max-width: 230px;
+  }
+  .infos--large .info {
+    max-width: 288px;
+  }
+  .info .icon {
+    transform: scale(0.8);
+    margin: -30px 0 -24px -32px;
+  }
+  .info p {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+  .info .link {
+    margin-top: 24px;
+  }
 }
 
 @keyframes sprite-icon {

@@ -70,6 +70,7 @@ html.fixed {
 @media (max-width: 1000px) {
   .inner {
     padding: 0 10px;
+    max-width: 692px;
   }
 }
 /* WhiteBox */
@@ -130,7 +131,11 @@ html.fixed {
 }
 
 .bgtext {
+  display: block;
   text-indent: -9999px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .links {
@@ -151,6 +156,16 @@ html.fixed {
   content: " >";
 }
 
+@media (max-width: 740px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .link {
+    font-size: 17px;
+  }
+}
 .feature {
   display: flex;
 }
@@ -297,6 +312,25 @@ html.fixed {
   line-height: 1.5;
 }
 
+@media (max-width: 1000px) {
+  .info {
+    max-width: 230px;
+  }
+  .infos--large .info {
+    max-width: 288px;
+  }
+  .info .icon {
+    transform: scale(0.8);
+    margin: -30px 0 -24px -32px;
+  }
+  .info p {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+  .info .link {
+    margin-top: 24px;
+  }
+}
 @keyframes sprite-icon {
   /* 1~10 */
   0.00% {
@@ -742,130 +776,6 @@ body :lang(ko) {
 
 main {
   overflow-x: hidden;
-}
-
-.hero {
-  background-color: var(--color-section);
-}
-.hero .inner {
-  padding-bottom: 110px;
-}
-.hero h1 {
-  width: 221px;
-  height: 91px;
-  background-image: url("/assets/images/hero_ipad_text.png");
-  position: absolute;
-  transform: translate(624px, 235px);
-  z-index: 1;
-}
-.hero__figures {
-  height: 808px;
-}
-.hero__figure {
-  transform: translate(74px, -64px);
-}
-.hero .caption-camera {
-  width: 120px;
-  height: 84px;
-  background-image: url("/assets/images/hero_ipad_caption_camera.png");
-  transform: translate(43px, 580px);
-}
-.hero .caption-chip {
-  width: 95px;
-  height: 43px;
-  background-image: url("/assets/images/hero_ipad_caption_chip.png");
-  transform: translate(589px, 510px);
-}
-.hero .caption-storage {
-  width: 80px;
-  height: 43px;
-  background-image: url("/assets/images/hero_ipad_caption_storage.png");
-  transform: translate(627px, 631px);
-}
-.hero h2 {
-  width: 738px;
-  height: 145px;
-  margin: 0 auto;
-  background-image: url("/assets/images/hero_headline.png");
-}
-.hero__pricing {
-  margin-top: 40px;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-.hero__description {
-  width: 88%;
-  margin: 18px auto 0;
-  font-size: 19px;
-  text-align: center;
-}
-.hero__links {
-  margin-top: 30px;
-}
-
-/* Power */
-.power {
-  margin-top: 110px;
-}
-
-/* Power / Multiple Apps */
-.power .multiple-apps h1 {
-  width: 500px;
-  height: 280px;
-  background-image: url("/assets/images/power_headline.png");
-  transform: translate(104px, 0);
-}
-
-.power .multiple-apps .figures {
-  height: 773px;
-}
-
-.power .multiple-apps figcaption {
-  width: 138px;
-  height: 46px;
-  background-image: url("/assets/images/power_multiple_apps_caption.png");
-  transform: translate(703px, -47px);
-}
-
-/* Power / Arcade */
-.power .arcade {
-  margin-top: 55px;
-}
-
-.power .arcade .figures {
-  height: 600px;
-}
-
-.power .arcade figure {
-  transform: translate(-347px, -90px);
-}
-
-.power .arcade figcaption {
-  width: 150px;
-  height: 77px;
-  background-image: url("/assets/images/power_arcade_caption.png");
-  transform: translate(483px, 653px);
-}
-
-/* Power / Create */
-.power .create {
-  margin-top: 55px;
-}
-
-.power .create .figures {
-  height: 772px;
-}
-
-.power .create figure {
-  transform: translate(-25px, 50px);
-}
-
-.power .create figcaption {
-  width: 142px;
-  height: 46px;
-  background-image: url("/assets/images/power_create_caption.png");
-  transform: translate(543px, 908px);
 }
 
 /* Display */
@@ -1642,6 +1552,171 @@ footer .legal ul li:hover a {
   color: currentColor;
 }
 
+/* Hero */
+.hero {
+  background-color: var(--color-section);
+}
+.hero .inner {
+  padding-bottom: 110px;
+}
+.hero h1 {
+  width: 221px;
+  height: 91px;
+  background-image: url("/assets/images/hero_ipad_text.png");
+  position: absolute;
+  transform: translate(624px, 235px);
+  z-index: 1;
+}
+.hero__figures {
+  height: 808px;
+}
+.hero__figure {
+  transform: translate(74px, -64px);
+}
+.hero .caption-camera {
+  width: 120px;
+  height: 84px;
+  background-image: url("/assets/images/hero_ipad_caption_camera.png");
+  transform: translate(43px, 580px);
+}
+.hero .caption-chip {
+  width: 95px;
+  height: 43px;
+  background-image: url("/assets/images/hero_ipad_caption_chip.png");
+  transform: translate(589px, 510px);
+}
+.hero .caption-storage {
+  width: 80px;
+  height: 43px;
+  background-image: url("/assets/images/hero_ipad_caption_storage.png");
+  transform: translate(627px, 631px);
+}
+.hero h2 {
+  width: 738px;
+  height: 145px;
+  margin: 0 auto;
+  background-image: url("/assets/images/hero_headline.png");
+}
+.hero__pricing {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+.hero__description {
+  width: 88%;
+  margin: 18px auto 0;
+  font-size: 19px;
+  text-align: center;
+}
+.hero__links {
+  margin-top: 30px;
+}
+
+/* Power */
+.power {
+  margin-top: 110px;
+}
+
+/* Power / Multiple Apps */
+.multiple-apps h1 {
+  width: 500px;
+  height: 280px;
+  background-image: url("/assets/images/power_headline.png");
+  transform: translate(104px, 0);
+}
+.multiple-apps .figures {
+  height: 773px;
+}
+.multiple-apps figcaption {
+  width: 138px;
+  height: 46px;
+  background-image: url("/assets/images/power_multiple_apps_caption.png");
+  transform: translate(703px, -47px);
+}
+
+/* Power / Arcade */
+.arcade {
+  margin-top: 55px;
+}
+.arcade .figures {
+  height: 600px;
+}
+.arcade figure {
+  transform: translate(-347px, -90px);
+}
+.arcade figcaption {
+  width: 150px;
+  height: 77px;
+  background-image: url("/assets/images/power_arcade_caption.png");
+  transform: translate(483px, 653px);
+}
+
+/* Power / Create */
+.create {
+  margin-top: 55px;
+}
+.create .figures {
+  height: 772px;
+}
+.create figure {
+  transform: translate(-25px, 50px);
+}
+.create figcaption {
+  width: 142px;
+  height: 46px;
+  background-image: url("/assets/images/power_create_caption.png");
+  transform: translate(543px, 908px);
+}
+
+@media (max-width: 1000px) {
+  .power {
+    margin-top: 80px;
+  }
+  .multiple-apps h1 {
+    width: 310px;
+    height: 180px;
+  }
+  .multiple-apps .figures {
+    height: 503px;
+  }
+  .multiple-apps figure {
+    transform: translate(71px, 0);
+  }
+  .multiple-apps figure img {
+    width: 682px;
+  }
+  .multiple-apps figcaption {
+    transform: scale(0.8) translate(532px, -58px);
+  }
+  .arcade {
+    margin-top: 0;
+  }
+  .arcade .figures {
+    height: 480px;
+  }
+  .arcade figure {
+    transform: translate(-182px, -6px);
+  }
+  .arcade figure img {
+    width: 676px;
+  }
+  .arcade figcaption {
+    transform: scale(0.8) translate(316px, 528px);
+  }
+  .create .figures {
+    height: 588px;
+  }
+  .create figure {
+    transform: translate(4px, -36px);
+  }
+  .create figure img {
+    width: 820px;
+  }
+  .create figcaption {
+    transform: scale(0.8) translate(420px, 747px);
+  }
+}
 /* breakPoint */
 @media (max-width: 740px) {
   .header::before {
@@ -1907,5 +1982,47 @@ footer .legal ul li:hover a {
   }
   .nav.menuing .nav__toggler::after {
     transform: rotate(40deg);
+  }
+}
+@media (max-width: 1000px) {
+  .hero .inner {
+    padding-bottom: 80px;
+  }
+  .hero h1 {
+    width: 166px;
+    height: 68px;
+    transform: translate(448px, 165px);
+  }
+  .hero__figures {
+    height: 584px;
+    margin-bottom: 14px;
+  }
+  .hero__figure {
+    transform: translate(70px, -24px);
+  }
+  .hero img {
+    width: 540px;
+  }
+  .hero .caption-camera {
+    transform: scale(0.8) translate(-9px, 524px);
+  }
+  .hero .caption-chip {
+    transform: scale(0.8) translate(510px, 422px);
+  }
+  .hero .caption-storage {
+    transform: scale(0.8) translate(556px, 556px);
+  }
+  .hero h2 {
+    width: 515px;
+    height: 95px;
+  }
+}
+@media (max-width: 740px) {
+  .hero__figures {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__figure {
+    position: relative;
   }
 }

@@ -1,0 +1,110 @@
+/* Power */
+.power {
+  margin-top: 110px;
+}
+
+/* Power / Multiple Apps */
+.multiple-apps {
+  h1 {
+    width: 500px;
+    height: 280px;
+    background-image: url("/assets/images/power_headline.png");
+    transform: translate(104px, 0);
+  }
+  .figures {
+    height: 773px;
+  }
+  figcaption {
+    width: 138px;
+    height: 46px;
+    background-image: url("/assets/images/power_multiple_apps_caption.png");
+    transform: translate(703px, -47px);
+  }
+}
+
+/* Power / Arcade */
+.arcade {
+  margin-top: 55px;
+  .figures {
+    height: 600px;
+  }
+  figure {
+    transform: translate(-347px, -90px);
+  }
+  figcaption {
+    width: 150px;
+    height: 77px;
+    background-image: url("/assets/images/power_arcade_caption.png");
+    transform: translate(483px, 653px);
+  }
+}
+
+/* Power / Create */
+.create {
+  margin-top: 55px;
+  .figures {
+    height: 772px;
+  }
+  figure {
+    transform: translate(-25px, 50px);
+  }
+  figcaption {
+    width: 142px;
+    height: 46px;
+    background-image: url("/assets/images/power_create_caption.png");
+    transform: translate(543px, 908px);
+  }
+}
+
+@include tablet {
+  .power {
+    margin-top: 80px;
+  }
+  .multiple-apps {
+    h1 {
+      width: 310px;
+      height: 180px;
+    }
+    .figures {
+      height: 503px;
+    }
+    figure {
+      transform: translate(71px, 0);
+      img {
+        width: 682px;
+      }
+    }
+    figcaption {
+      transform: scale(0.8) translate(532px, -58px);
+    }
+  }
+  .arcade {
+    margin-top: 0;
+    .figures {
+      height: 480px;
+    }
+    figure {
+      transform: translate(-182px, -6px);
+      img {
+        width: 676px;
+      }
+    }
+    figcaption {
+      transform: scale(0.8) translate(316px, 528px);
+    }
+  }
+  .create {
+    .figures {
+      height: 588px;
+    }
+    figure {
+      transform: translate(4px, -36px);
+      img {
+        width: 820px;
+      }
+    }
+    figcaption {
+      transform: scale(0.8) translate(420px, 747px);
+    }
+  }
+}
