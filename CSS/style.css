@@ -501,6 +501,7 @@ body :lang(ko) {
   position: relative;
   z-index: 9;
   background-color: var(--color-header);
+  transition: 0.4s;
 }
 .header .inner {
   max-width: 1000px;
@@ -1699,6 +1700,26 @@ footer .legal ul li:hover a {
     opacity: 1;
     transform: translate(0, 0);
   }
+  .menuing.searching--mobile {
+    transform: translate(0, -30px);
+  }
+  .menuing.searching--mobile .autocompletes {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  .menuing.searching--mobile .search__textfield {
+    width: calc(100% - 55px);
+  }
+  .menuing.searching--mobile .search__canceler {
+    visibility: visible;
+    opacity: 1;
+  }
+  .menuing.searching--mobile .clone-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 100px);
+  }
   /* Search 검색 */
   .search-wrap {
     padding: 0 20px 14px;
@@ -1713,12 +1734,30 @@ footer .legal ul li:hover a {
   .search__textfield {
     border-radius: 10px;
     background-color: #1d1d1d;
+    width: 100%;
+    transition: 0.2s;
+  }
+  .search__closer {
+    display: none;
+  }
+  .search__canceler {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    color: var(--color-link);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
   }
   .search__input,
   .search__icon,
   .autocompletes__title,
   .autocompletes__item {
-    transition: 0.6s;
     transform: translate(0, 0);
   }
   /* Autocompletes 자동완성 */
@@ -1728,6 +1767,8 @@ footer .legal ul li:hover a {
     background-color: transparent;
     visibility: hidden;
     opacity: 0;
+    transition: 0.3s;
+    transform: translate(0, -100px);
   }
   .autocompletes__item {
     border-bottom: 1px solid var(--color-header);

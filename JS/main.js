@@ -39,7 +39,10 @@ const searchInputEl = searchWrapEl.querySelector(".search__input");
 const searchDelayEls = [...searchWrapEl.querySelectorAll(".autocompletes__item")];
 
 searchStarterEl.addEventListener("click", showSearch);
-searchCloserEl.addEventListener("click", hideSearch);
+searchCloserEl.addEventListener("click", (event) => {
+  event.stopPropagation();
+  hideSearch();
+});
 searchShadowEl.addEventListener("click", hideSearch);
 
 function showSearch() {
@@ -173,12 +176,20 @@ menuStarterEl.addEventListener("click", () => {
 });
 
 // 헤더 검색! [모바일]
-const searchTextFieldEl = document.querySelector(".textfield");
-const searchCancelEl = document.querySelector(".search-canceler");
+const searchTextFieldEl = document.querySelector(".search__textfield");
+const searchCancelEl = document.querySelector(".search__canceler");
 searchTextFieldEl.addEventListener("click", () => {
   headerEl.classList.add("searching--mobile");
   searchInputEl.focus();
 });
 searchCancelEl.addEventListener("click", () => {
   headerEl.classList.remove("searching--mobile");
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 740) {
+    headerEl.classList.remove("searching");
+  } else {
+    headerEl.classList.remove("searching--mobile");
+  }
 });

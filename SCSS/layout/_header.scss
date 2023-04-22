@@ -4,6 +4,7 @@
   position: relative;
   z-index: 9;
   background-color: var(--color-header);
+  transition: 0.4s;
   .inner {
     max-width: 1000px;
   }

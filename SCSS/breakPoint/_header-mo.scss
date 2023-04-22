@@ -59,6 +59,31 @@
     }
   }
 
+  .menuing.searching--mobile {
+    transform: translate(0, -30px);
+
+    .autocompletes {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    .search {
+      &__textfield {
+        width: calc(100% - 55px);
+      }
+      &__canceler {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+    .clone-menu {
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(0, 100px);
+    }
+  }
+
   /* Search 검색 */
   .search-wrap {
     padding: 0 20px 14px;
@@ -72,13 +97,31 @@
     &__textfield {
       border-radius: 10px;
       background-color: #1d1d1d;
+      width: 100%;
+      transition: 0.2s;
+    }
+    &__closer {
+      display: none;
+    }
+    &__canceler {
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      color: var(--color-link);
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.4s;
+      visibility: hidden;
+      opacity: 0;
     }
   }
   .search__input,
   .search__icon,
   .autocompletes__title,
   .autocompletes__item {
-    transition: 0.6s;
     transform: translate(0, 0);
   }
 
@@ -89,6 +132,8 @@
     background-color: transparent;
     visibility: hidden;
     opacity: 0;
+    transition: 0.3s;
+    transform: translate(0, -100px);
     &__item {
       border-bottom: 1px solid var(--color-header);
       &:last-child {
