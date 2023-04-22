@@ -193,3 +193,26 @@ window.addEventListener("resize", () => {
     headerEl.classList.remove("searching--mobile");
   }
 });
+
+// 네비게이션 메뉴 토글! [모바일]
+const navEl = document.querySelector(".nav");
+const navMenuToggleEl = document.querySelector(".nav__toggler");
+const navMenuShadowEl = document.querySelector(".nav__shadow");
+navMenuToggleEl.addEventListener("click", () => {
+  if (navEl.classList.contains("menuing")) {
+    hideNavMenu();
+  } else {
+    showNavMenu();
+  }
+});
+navEl.addEventListener("click", (event) => {
+  event.stopImmediatePropagation();
+});
+navMenuShadowEl.addEventListener("click", hideNavMenu);
+window.addEventListener("click", hideNavMenu);
+function showNavMenu() {
+  navEl.classList.add("menuing");
+}
+function hideNavMenu() {
+  navEl.classList.remove("menuing");
+}

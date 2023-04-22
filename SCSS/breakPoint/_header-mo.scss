@@ -32,7 +32,7 @@
   }
 
   /* Menu 활성화 */
-  .menuing {
+  .header.menuing {
     background-color: var(--color-black);
     &::before {
       height: 100vh;

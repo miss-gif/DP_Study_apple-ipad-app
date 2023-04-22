@@ -1,0 +1,96 @@
+@include mobile {
+  .nav {
+    &__contents-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      border-bottom: 1px solid var(--color-border);
+      background-color: var(--color-white);
+      visibility: hidden;
+      transition: 0.4s;
+    }
+    &__shadow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--color-shadow);
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.4s;
+    }
+    &__toggler {
+      width: 30px;
+      height: 24px;
+      margin-right: 10px;
+      cursor: pointer;
+      position: relative;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 11px;
+        height: 1px;
+        background-color: var(--color-font-darkgray);
+        inset: 0;
+        margin: auto;
+        transition: 0.4s;
+      }
+      &::before {
+        transform: rotate(40deg);
+        left: -9px;
+      }
+      &::after {
+        transform: rotate(-40deg);
+        right: -9px;
+      }
+    }
+    &__list {
+      position: absolute;
+      top: var(--nav-height);
+      left: 0;
+      width: 100%;
+      padding: 10px 40px 30px;
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transform: translate(0, -50px);
+      transition: 0.4s;
+    }
+    &__item {
+      border-bottom: 1px solid var(--color-border);
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &__link {
+      padding: 16px 0;
+      font-size: 14px;
+    }
+  }
+  .nav.menuing {
+    .nav__list {
+      visibility: visible;
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+    .nav__contents-bg {
+      visibility: visible;
+      height: 232px;
+    }
+    .nav__shadow {
+      visibility: visible;
+      opacity: 1;
+    }
+    .nav__toggler::before {
+      transform: rotate(-40deg);
+    }
+    .nav__toggler::after {
+      transform: rotate(40deg);
+    }
+  }
+}
