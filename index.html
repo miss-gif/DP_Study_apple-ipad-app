@@ -31,12 +31,14 @@
 <body>
   <header class="header">
     <div class="inner">
+
+      <!-- Menu 메뉴 -->
       <ul class="menu">
         <li class="menu__item menu-starter">
-          <a>
-            <div>
-              <span></span>
-              <span></span>
+          <a class="menu-starter__link">
+            <div class="menu-starter__icon">
+              <span class="menubar"></span>
+              <span class="menubar"></span>
             </div>
           </a>
         </li>
@@ -56,6 +58,8 @@
         </li>
         <li class="menu__item basket-starter">
           <a href="javascript:void(0)" class="menu__link menu__icon bgtext">장바구니</a>
+
+          <!-- Basket 장바구니 -->
           <div class="basket">
             <span class="basket__arrow"></span>
             <div class="basket__message">
@@ -72,6 +76,7 @@
         </li>
       </ul>
 
+      <!-- Search 검색 -->
       <div class="search-wrap">
         <div class="search">
           <div class="search__shadow"></div>
@@ -81,8 +86,10 @@
             <div class="search__closer"></div>
           </div>
           <div class="search__canceler">취소</div>
+
+          <!-- Autocompletes 자동완성 -->
           <div class="autocompletes">
-            <h3>빠른 링크</h3>
+            <h3 class="autocompletes__title">빠른 링크</h3>
             <ul class="autocompletes__list">
               <li class="autocompletes__item"><a class="autocompletes__link" href="javascript:void(0)">Apple Store 임시 휴무
                   관련 자주하는 질문</a></li>
@@ -97,6 +104,7 @@
       </div>
     </div>
 
+    <!-- Clone-menu 모바일 메뉴 -->
     <div class="clone-menu">
       <ul class="clone-menu__list">
         <li class="clone-menu__item"><a href="javascript:void(0)" class="clone-menu__link">스토어</a></li>
@@ -130,6 +138,7 @@
   </nav>
 
   <main class="main">
+
     <!-- Hero -->
     <section class="hero">
       <div class="inner">
