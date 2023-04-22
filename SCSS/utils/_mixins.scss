@@ -1,0 +1,16 @@
+// Break Point
+$tablet: 1000px;
+$mobile: 740px;
+
+// Mixins
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
