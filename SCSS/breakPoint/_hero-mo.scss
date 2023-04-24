@@ -36,12 +36,46 @@
 
 @include mobile {
   .hero {
+    padding-top: 40px;
+    .inner {
+      padding-bottom: 40px;
+    }
+    h1 {
+      margin: 0 auto 40px;
+      transform: none;
+      position: static;
+    }
     &__figures {
-      display: flex;
-      justify-content: center;
+      height: auto;
+      margin-bottom: 100px;
     }
     &__figure {
-      position: relative;
+      transform: none;
+    }
+    img {
+      width: 337px;
+    }
+    .caption-camera {
+      background-image: url("/assets/images/hero_ipad_caption_camera_mobile.png");
+      transform: scale(1) translate(21px, 368px);
+    }
+    .caption-chip {
+      transform: scale(0.8) translate(248px, 42px);
+    }
+    .caption-storage {
+      transform: scale(0.8) translate(288px, 168px);
+    }
+    h2 {
+      width: 295px;
+      height: 185px;
+      background-image: url("/assets/images/hero_headline_mobile.png");
+    }
+    &__pricing {
+      font-size: 20px;
+    }
+    &__description {
+      width: auto;
+      font-size: 17px;
     }
   }
 }

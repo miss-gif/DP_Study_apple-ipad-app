@@ -1,0 +1,83 @@
+/* Display */
+.display {
+  margin-top: 450px;
+}
+/* Display / Notes */
+.notes {
+  h1 {
+    width: 630px;
+    height: 370px;
+    background-image: url("/assets/images/display_headline.png");
+    transform: translate(104px, 0);
+  }
+  .figures {
+    height: 814px;
+    margin-top: 26px;
+  }
+
+  figcaption {
+    width: 145px;
+    height: 45px;
+    background-image: url("/assets/images/display_notes_caption.png");
+    transform: translate(707px, -16px);
+  }
+}
+.shareplay {
+  margin-top: 55px;
+  .figures {
+    height: 630px;
+  }
+  figure {
+    transform: translate(-360px, 0);
+  }
+  figcaption {
+    width: 110px;
+    height: 48px;
+    background-image: url("/assets/images/display_shareplay_caption.png");
+    transform: translate(300px, 658px);
+  }
+}
+
+@include tablet {
+  .display {
+    margin-top: 180px;
+  }
+
+  .notes {
+    h1 {
+      width: 400px;
+      height: 240px;
+      transform: translate(120px, 0);
+    }
+    .figures {
+      height: 530px;
+    }
+    figure {
+      transform: translate(80px, -10px);
+      img {
+        width: 676px;
+      }
+    }
+    figcaption {
+      transform: scale(0.8) translate(540px, -34px);
+    }
+  }
+
+  .shareplay {
+    .figures {
+      height: 330px;
+    }
+    figure {
+      transform: translate(-178px, 0);
+      img {
+        width: 682px;
+      }
+    }
+    figcaption {
+      transform: scale(0.8) translate(261px, 540px);
+    }
+  }
+}
+
+@include mobile {
+}
