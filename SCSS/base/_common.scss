@@ -157,6 +157,9 @@ html.fixed {
 }
 
 @include mobile {
+  .feature {
+    flex-direction: column;
+  }
   .figures {
     display: flex;
     justify-content: center;
@@ -284,6 +287,19 @@ html.fixed {
   }
   .info .link {
     margin-top: 24px;
+  }
+}
+
+@include mobile {
+  .info {
+    max-width: none;
+    padding: 0 20px;
+  }
+  .infos--large .info {
+    max-width: none;
+  }
+  .info .link {
+    font-size: 17px;
   }
 }
 
