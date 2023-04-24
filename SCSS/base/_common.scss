@@ -76,6 +76,18 @@ html.fixed {
   margin-top: 26px;
 }
 
+@include tablet {
+  .whitebox {
+    padding: 60px 30px;
+    .icon {
+      width: 44px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+  }
+}
+
 .btn {
   display: flex;
   justify-content: center;

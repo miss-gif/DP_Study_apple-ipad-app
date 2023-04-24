@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@include tablet {
   .camera {
     margin-top: 165px;
   }
@@ -43,14 +43,14 @@
   }
 }
 
-@media (max-width: 740px) {
+@include mobile {
   .camera {
     margin-top: 120px;
   }
   .camera .stage h1 {
     width: 304px;
     height: 350px;
-    background-image: url("../images/camera_headline_mobile.png");
+    background-image: url("/assets/images/camera_headline_mobile.png");
     margin: 0 auto;
   }
   .camera .stage .info {
@@ -79,7 +79,7 @@
   .camera .stage figcaption {
     width: 175px;
     height: 43px;
-    background-image: url("../images/camera_hardware_caption_mobile.png");
+    background-image: url("/assets/images/camera_hardware_caption_mobile.png");
     transform: scale(1) translate(110px, -40px);
   }
   .camera .edit .figures {
